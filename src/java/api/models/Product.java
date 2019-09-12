@@ -19,19 +19,18 @@ public class Product {
     private int quantity;
     private String description;
     private int rating;
-
-    private Category categorie;
+    private String imageUrl;
 
     public Product() {
     }
 
-    public Product(String name, Double price, int quantity, String description, int rating, Category category) {
+    public Product(String name, Double price, int quantity, String description, int rating, String imageUrl) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.description = description;
         this.rating = rating;
-        this.categorie = category;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -72,13 +71,5 @@ public class Product {
 
     public void setRating(int rating) {
         this.rating = rating;
-    }
-
-    public Category getCategorie() {
-        return categorie;
-    }
-
-    public void setCategorie(Category categorie) {
-        this.categorie = categorie;
     }
 }

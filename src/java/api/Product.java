@@ -30,11 +30,21 @@ public class Product extends HttpServlet {
 
     public Product() {
         this.gson = new Gson();
-        api.models.Product p1 = new api.models.Product("Product A", 120.50, 10, "Description A", 0, new Category("C1", "Cat 1"));
         this.products = new ArrayList<>();
-               
-        products.add(p1);
-        products.add(new api.models.Product("Product B", 130.50, 10, "Description B", 1, new Category("C2", "Cat 2")));
+        
+        // This is the data you are returning from your API endpoint. The data soruce can be a DB, JSON or another web service.
+        // The sameple data is hard-corded here just to keep things simple. 
+        products.add(new api.models.Product("Product A Tesing", 100.50, 10, "Description A", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product B", 130.50, 20, "Description B", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product C", 140.50, 30, "Description C", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product D", 150.50, 40, "Description D", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product E", 160.50, 50, "Description E", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product F", 170.50, 60, "Description F", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product G", 180.50, 70, "Description G", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product H", 190.50, 80, "Description H", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product I", 220.50, 90, "Description I", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product J", 320.50, 100, "Description J", 0, "https://picsum.photos/200"));
+        products.add(new api.models.Product("Product K", 420.50, 1100, "Description K", 0, "https://picsum.photos/200"));
         
     }
     
